@@ -20,12 +20,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - Claude Code survival guide (CLAUDE.md, Skills, MCP overhead).
 - Real worked cost-savings examples.
 - Runnable code examples in Python and TypeScript:
-  - `01_basic_caching` — minimal prompt caching with cost printout.
-  - `02_multi_breakpoint_caching` — agent-style 4-breakpoint cache (Python).
-  - `03_batch_api` — end-to-end Batch API with caching.
-  - `04_token_counting` — `count_tokens` usage.
-  - `05_conversation_history_caching` — rolling cache point (Python).
-  - `06_adaptive_thinking` — adaptive thinking + `effort` (Python).
-  - `07_cost_calculator` — CLI tool to compute cost across all rate categories.
+ - `01_basic_caching`: minimal prompt caching with cost printout.
+ - `02_multi_breakpoint_caching`: agent-style 4-breakpoint cache (Python).
+ - `03_batch_api`: end-to-end Batch API with caching.
+ - `04_token_counting`: `count_tokens` usage.
+ - `05_conversation_history_caching`: rolling cache point (Python).
+ - `06_adaptive_thinking`: adaptive thinking + `effort` (Python).
+ - `07_cost_calculator`: CLI tool to compute cost across all rate categories.
 - Standalone reference tables in `tables/`.
 - LICENSE (MIT), CONTRIBUTING.md, .gitignore.

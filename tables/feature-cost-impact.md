@@ -11,7 +11,7 @@
 | Projects (paid plans) | RAG retrieves only relevant chunks → ~10× capacity | Reusable reference material |
 | Memory feature | +~hundreds of tokens per turn for the synthesis | Helpful, but trim |
 | Styles | +tens of tokens per turn (cheap, useful) | "Concise" style for chatty users |
-| Personal preferences (Settings) | +some tokens per turn | A short "about me" — keep < 2,000 words |
+| Personal preferences (Settings) | +some tokens per turn | A short "about me"; keep under 2,000 words |
 | Incognito chats | No memory injected | One-off sessions you don't want remembered |
 
 ## Power-user toggles
@@ -23,8 +23,8 @@
 | Web Search | $10 / 1K searches + content tokens | When facts must be current |
 | Research / Deep Research | Highest per-task cost on the platform | True research projects |
 | Connectors (Slack, GDrive, …) | Tool descriptions on every turn | Active use only |
-| MCP connectors | +1.5K–8K tokens/server/turn (up to 18K with several) | Active use only |
-| Each PDF page in chat | ~1.5K–3K tokens | Re-encoded every turn while in context |
+| MCP connectors | +1.5K-8K tokens/server/turn (up to 18K with several) | Active use only |
+| Each PDF page in chat | ~1.5K-3K tokens | Re-encoded every turn while in context |
 | Each high-res image (Opus 4.7) | up to 4,784 tokens | Pre-resize when text/layout matters |
 | File still attached to the chat | Re-encoded every turn | Remove when done |
 
@@ -47,12 +47,12 @@
 
 | Tool | Token overhead | Extra fee |
 |---|---|---|
-| Generic `tools` array (≥1 tool) | 200–800 system tokens | — |
-| `bash` tool | +245 system tokens | — |
-| `computer_use` tool | +466–499 + per-screenshot vision tokens | — |
+| Generic `tools` array (≥1 tool) | 200-800 system tokens | - |
+| `bash` tool | +245 system tokens | - |
+| `computer_use` tool | +466-499 + per-screenshot vision tokens | - |
 | Web search (server tool) | +tokens for results | $10 / 1K searches |
-| Web fetch | average page ~2,500 tokens | — |
-| Code execution | container-hour billing when used standalone | — |
+| Web fetch | average page ~2,500 tokens | - |
+| Code execution | container-hour billing when used standalone | - |
 
 ## Claude Code specifics
 
@@ -64,7 +64,7 @@
 | `/rewind` (Esc-Esc) | Cheaper than corrections |
 | CLAUDE.md under 200 lines | Inflates every turn otherwise |
 | Skills (lazy-loaded) | Only the description is in the system prompt by default |
-| Audit MCP servers | Each adds 1.5K–8K tokens/turn; many add 18K+ |
+| Audit MCP servers | Each adds 1.5K-8K tokens/turn; many add 18K+ |
 | `MAX_THINKING_TOKENS` env var | Lower default thinking budget |
 | Plan Mode (Shift+Tab) | Plan once, not 3× recovery |
 | Diff output, not full files | Cuts thousands of output tokens |
