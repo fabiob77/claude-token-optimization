@@ -1,0 +1,22 @@
+{
+  "name": "claude-token-optimization-examples-ts",
+  "version": "1.0.0",
+  "description": "TypeScript examples for the Claude token-optimization guide.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "example:01": "tsx src/01_basic_caching.ts",
+    "example:03": "tsx src/03_batch_api.ts",
+    "example:04": "tsx src/04_token_counting.ts",
+    "example:07": "tsx src/07_cost_calculator.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.40.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.0",
+    "@types/node": "^20.0.0"
+  }
+}
