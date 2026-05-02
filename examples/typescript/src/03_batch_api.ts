@@ -3,13 +3,13 @@
  * ========================================
  *
  * - Submit up to 10,000 requests in one batch
- * - 50% discount on input AND output tokens
- * - Use 1-hour cache TTL because batches can take >5 minutes
+ * - 50% off both input AND output tokens
+ * - Use 1-hour cache TTL because batches can take longer than 5 min
  *
  * Run:
  *     npm run example:03
  *
- * Most batches finish in <1 minute; SLA is 24 hours.
+ * Most batches finish in under a minute, but the official SLA is 24 hours.
  */
 
 import "dotenv/config";

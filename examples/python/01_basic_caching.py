@@ -2,9 +2,9 @@
 01 - Basic prompt caching with cost comparison
 =============================================
 
-Demonstrates the simplest form of prompt caching: a long, stable system
-prompt marked with `cache_control`. The first call writes to the cache;
-subsequent calls within the TTL hit it at 10% of base input cost.
+The simplest form of prompt caching: a long, stable system prompt marked
+with `cache_control`. The first call writes to the cache; subsequent
+calls within the TTL hit it at 10% of base input cost.
 
 Run twice within 5 minutes to see the cache_read on the second run:
 

@@ -2,7 +2,7 @@
 02 - Multi-breakpoint caching for agents
 ========================================
 
-Real production agents often have several stable layers:
+Real production agents usually have several stable layers:
     tools           (large schemas, rarely change)
     system          (instructions, sometimes versioned)
     long doc / RAG  (per-session, reused across many turns)
@@ -10,7 +10,7 @@ Real production agents often have several stable layers:
 
 The Claude API allows up to 4 cache breakpoints per request, evaluated
 in order: tools -> system -> messages. This example shows how to mark
-each layer so they cache independently and avoid invalidating each other.
+each layer so they cache independently and don't invalidate each other.
 
 Run:
     python 02_multi_breakpoint_caching.py

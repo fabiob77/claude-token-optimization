@@ -2,8 +2,8 @@
 07 - Cost calculator CLI
 ========================
 
-A standalone, dependency-free script that estimates cost from token counts.
-Use it offline (no API key needed) to:
+Standalone script. No API key needed. Estimates cost from token counts.
+Use it offline to:
 
 - Sanity-check budgets before deploying.
 - Compare scenarios (cached vs uncached, batch vs sync, model vs model).

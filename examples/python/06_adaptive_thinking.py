@@ -2,17 +2,18 @@
 06 - Adaptive thinking + the `effort` parameter
 ===============================================
 
-Two cost knobs that the API exposes for newer models:
+Two cost knobs the API exposes for newer models:
 
 - `thinking={"type": "adaptive"}` (Opus 4.6/4.7, Sonnet 4.6):
     The model decides whether to think and how much, instead of you
-    setting a fixed `budget_tokens`. Often cheaper than always-on
-    extended thinking and matches quality on hard prompts.
+    setting a fixed `budget_tokens`. Often cheaper than always-on,
+    and matches quality on hard prompts.
 
 - `effort` ("low" | "medium" | "high" | "max"):
-    Modulates how many tool calls and how much output the model produces.
-    Use "low" for chat-like Q&A; "medium" is a good default; "high" is
-    the implicit default; "max" is for "money is no object" tasks.
+    Modulates how many tool calls and how much output the model
+    produces. Use "low" for chat-style Q&A; "medium" is a good default;
+    "high" is the implicit default; "max" is for "money is no object"
+    tasks.
 
 This script asks one easy and one hard question, with three effort
 settings each, and prints the usage so you can see the difference.

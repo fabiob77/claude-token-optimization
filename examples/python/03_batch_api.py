@@ -2,21 +2,21 @@
 03 - Batch API end-to-end (with caching)
 ========================================
 
-Demonstrates the cheapest async pattern available on Claude:
+The cheapest async pattern available on Claude:
 - Submit up to 10,000 requests in one batch
-- 50% discount on input AND output tokens
-- Use 1-hour cache TTL because batches can take >5 minutes
+- 50% off both input AND output tokens
+- Use the 1-hour cache TTL because batches can take longer than 5 min
 
 This script:
 1. Builds a batch of 5 requests, each with a shared cached system prompt.
 2. Submits them.
 3. Polls until done.
-4. Prints results with usage breakdown.
+4. Prints results with a usage breakdown.
 
 Run:
     python 03_batch_api.py
 
-Note: most batches finish in under a minute, but the SLA is 24 hours.
+Most batches finish in under a minute, but the official SLA is 24 hours.
 Don't use the Batch API for anything user-facing in real time.
 """
 

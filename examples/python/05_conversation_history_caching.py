@@ -2,15 +2,15 @@
 05 - Conversation history caching (rolling cache point)
 =======================================================
 
-Long conversations are expensive because every turn re-sends the entire
-history as input. The trick is to mark the LAST user message as cacheable
-- this turns everything before it into a cached prefix on the next turn.
+Long conversations get expensive because every turn re-sends the entire
+history as input. The trick: mark the LAST user message as cacheable.
+That turns everything before it into a cached prefix on the next turn.
 
 Pattern:
 - System prompt cached with 1-hour TTL (stable across turns).
 - Each new user turn marked with 5-minute cache_control. The previous
-  turn's mark stops counting; on the next turn, the previous user message
-  is now part of the cached prefix.
+  turn's mark stops counting; on the next turn, the previous user
+  message is now part of the cached prefix.
 
 This keeps you within the 4-breakpoint per-request limit while letting
 the conversation grow indefinitely with mostly-cached input.

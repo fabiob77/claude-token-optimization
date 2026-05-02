@@ -2,11 +2,11 @@
  * 04 - Token counting before you spend
  * ====================================
  *
- * `messages.countTokens` returns the input-token count the model would see
- * for a given request. Free, rate-limited, supports system, tools, images,
- * PDFs, and thinking. Use it to:
+ * `messages.countTokens` returns the input-token count the model would
+ * see for a given request. Free, rate-limited, supports system, tools,
+ * images, PDFs, and thinking. Use it to:
  *
- * - Decide if a request fits the context window before sending it.
+ * - Decide if a request fits the context window before you send it.
  * - Estimate cost (combine with prices from 07_cost_calculator).
  * - Monitor prompt sizes in tests / CI.
  *

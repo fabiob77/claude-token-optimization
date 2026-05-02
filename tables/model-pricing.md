@@ -1,6 +1,6 @@
 # Model pricing reference
 
-> Per 1 million tokens, USD. Verified against [claude.com/pricing](https://claude.com/pricing) on 30 April 2026. Confirm before relying on numbers; Anthropic ships pricing changes regularly.
+> Per 1 million tokens, USD. Verified against [claude.com/pricing](https://claude.com/pricing) on 30 April 2026. Always check the live page before you rely on these numbers; Anthropic ships pricing changes regularly.
 
 | Model | Input | Output | Cache read (90% off) | 5-min cache write | 1-h cache write | Batch input | Batch output | Context |
 |---|---|---|---|---|---|---|---|---|
@@ -30,4 +30,4 @@
 - **5-min TTL (1.25× write, 0.10× read):** breaks even after **1 cache read**.
 - **1-h TTL (2.0× write, 0.10× read):** breaks even after **2 cache reads**.
 
-Stack with Batch: combined effective discount can reach **~95%** vs naive synchronous calls.
+Stack caching with Batch and the combined effective discount can reach about 95% versus naive synchronous calls.
