@@ -3,7 +3,7 @@
 > A practical handbook for both developers and consumer users, covering Claude.ai (Free / Pro / Max / Team / Enterprise), the Claude API, Claude Code, the Claude Chrome extension, and the Claude Desktop app (Cowork).
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Made with Claude](https://img.shields.io/badge/Made%20with-Claude-D97757)](https://claude.com)
+[![Made partially with Claude](https://img.shields.io/badge/Made%20with-Claude-D97757)](https://claude.com)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 
 A few words of warning before you read on: **all the prices, model names and limits in this guide are accurate as of late April 2026.** Anthropic changes these things often, so please check [claude.com/pricing](https://claude.com/pricing) and the official docs before you make any architectural decision based on the numbers here.
